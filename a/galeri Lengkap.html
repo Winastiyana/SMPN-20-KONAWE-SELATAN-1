@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Lengkap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f5f5f5;
+      position: relative;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .gallery-full {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery-full img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .gallery-full img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-link {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      background-color: #e6f0ff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.2s;
+    }
+
+    .back-link:hover {
+      background-color: #cce0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tombol kembali -->
+  <a href="kesiswaan.html" class="back-link">← Kembali</a>
+
+  <h2>Galeri Lengkap Kegiatan Siswa</h2>
+  <div class="gallery-full">
+    <img src="images/galeri1.jpg" alt="Galeri 1" />
+    <img src="images/galeri2.jpg" alt="Galeri 2" />
+    <img src="images/galeri3.jpg" alt="Galeri 3" />
+    <!-- Tambahkan gambar lain jika ada -->
+  </div>
+
+</body>
+</html>
